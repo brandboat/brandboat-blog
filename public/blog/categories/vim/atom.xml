@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Vim | brandboat]]></title>
+  <link href="http://brandboat.github.io/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://brandboat.github.io/"/>
+  <updated>2015-05-10T01:26:34+08:00</updated>
+  <id>http://brandboat.github.io/</id>
+  <author>
+    <name><![CDATA[brandboat]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Vim 設置 Colorscheme]]></title>
+    <link href="http://brandboat.github.io/blog/2014/01/29/vimrc-colorscheme/"/>
+    <updated>2014-01-29T00:00:00+08:00</updated>
+    <id>http://brandboat.github.io/blog/2014/01/29/vimrc-colorscheme</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/jpo/vim-railscasts-theme"><strong>vim-railscasts-theme</strong></a></p>
+
+<ul>
+<li><p><strong><code>cd ~/.vim/colors</code></strong>
+若無此資料夾，請自行新建</p></li>
+<li><p><strong><code>vim railscasts.vim</code></strong>
+複製 <a href="https://github.com/jpo/vim-railscasts-theme"><strong>vim-railscasts-theme</strong></a> 中的 railscasts.vim 到裡頭</p></li>
+<li><p><strong><code>vim ~/.vimrc</code></strong>
+加入此行
+<code>colorscheme railscasts</code>
+或者
+<code>colo railscasts</code>
+來設置 colorscheme</p></li>
+</ul>
+
+
+<p><img src="http://sunaku.github.io/vim-256color-bce-xterm.png" alt="" /><br/><br/>
+(圖片來源自：<a href="http://sunaku.github.io/vim-256color-bce-xterm.png">http://sunaku.github.io/vim-256color-bce-xterm.png</a>)
+<br/><br/>
+如果使用了<code>colorscheme</code>而在<code>tmux</code>開<code>vim</code>時出現每一行底色跟背景顏色不一致的情況，這是因為設置了<code>TERM=xterm-256color</code>而衍生出來的問題，解決辦法 ：  <a href="http://sunaku.github.io/vim-256color-bce.html">disable Background Color Erase</a> 。</p>
+
+<ul>
+<li>在<code>~/.vimrc</code>中加入</li>
+</ul>
+
+
+<p><code>set t_ut=</code></p>
+]]></content>
+  </entry>
+  
+</feed>
