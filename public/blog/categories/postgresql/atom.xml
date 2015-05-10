@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Postgresql | brandboat]]></title>
   <link href="http://brandboat.github.io/blog/categories/postgresql/atom.xml" rel="self"/>
   <link href="http://brandboat.github.io/"/>
-  <updated>2015-05-10T01:26:34+08:00</updated>
+  <updated>2015-05-10T17:01:10+08:00</updated>
   <id>http://brandboat.github.io/</id>
   <author>
     <name><![CDATA[brandboat]]></name>
@@ -250,7 +250,7 @@ host    all             all             ::1/128             trust</p></li>
 <p><osm-script output="osm" timeout="25">
   <query type="way">
     <has-kv k="highway"/>
-    <bbox-query />
+    <bbox-query {{bbox}}/>
   </query>
   <print mode="body"/>
   <recurse type="down"/>
