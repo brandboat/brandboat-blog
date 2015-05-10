@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | brandboat]]></title>
   <link href="http://brandboat.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://brandboat.github.io/"/>
-  <updated>2015-05-10T17:01:10+08:00</updated>
+  <updated>2015-05-10T17:02:17+08:00</updated>
   <id>http://brandboat.github.io/</id>
   <author>
     <name><![CDATA[brandboat]]></name>
@@ -22,39 +22,68 @@
 
 <p><code>sudo vim /etc/fonts/conf.d/49-sansserif.conf</code>
 內容如下
-&#8220;`
-&lt;?xml version=&ldquo;1.0&rdquo;?>
-&lt;!DOCTYPE fontconfig SYSTEM &ldquo;fonts.dtd&rdquo;>
-<fontconfig></p>
-
-<!--
-If the font still has no generic name, add sans-serif
--->
-
-
-<p>  <match target="pattern">
-    <test qual="all" name="family" compare="not_eq">
-      <string>sans-serif</string>
-    </test>
-    <test qual="all" name="family" compare="not_eq">
-      <string>serif</string>
-    </test>
-    <test qual="all" name="family" compare="not_eq">
-      <string>monospace</string>
-    </test>
-    <edit name="family" mode="append_last">
-      <string>sans-serif</string>
-    </edit>
-  </match>
-</fontconfig></p>
-
-<pre><code>將
-</code></pre>
-
-<p><edit name="family" mode="append_last">
-  <string>sans-serif</string>
-</edit>
-&#8220;`</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;?xml version=&ldquo;1.0&rdquo;?&gt;
+</span><span class='line'>&lt;!DOCTYPE fontconfig SYSTEM &ldquo;fonts.dtd&rdquo;&gt;
+</span><span class='line'>&lt;fontconfig&gt;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;!--
+</span><span class='line'>If the font still has no generic name, add sans-serif
+</span><span class='line'>--&gt;
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;  &lt;match target="pattern"&gt;
+</span><span class='line'>    &lt;test qual="all" name="family" compare="not_eq"&gt;
+</span><span class='line'>      &lt;string&gt;sans-serif&lt;/string&gt;
+</span><span class='line'>    &lt;/test&gt;
+</span><span class='line'>    &lt;test qual="all" name="family" compare="not_eq"&gt;
+</span><span class='line'>      &lt;string&gt;serif&lt;/string&gt;
+</span><span class='line'>    &lt;/test&gt;
+</span><span class='line'>    &lt;test qual="all" name="family" compare="not_eq"&gt;
+</span><span class='line'>      &lt;string&gt;monospace&lt;/string&gt;
+</span><span class='line'>    &lt;/test&gt;
+</span><span class='line'>    &lt;edit name="family" mode="append_last"&gt;
+</span><span class='line'>      &lt;string&gt;sans-serif&lt;/string&gt;
+</span><span class='line'>    &lt;/edit&gt;
+</span><span class='line'>  &lt;/match&gt;
+</span><span class='line'>&lt;/fontconfig&gt;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;將
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;&lt;edit name="family" mode="append_last"&gt;
+</span><span class='line'>  &lt;string&gt;sans-serif&lt;/string&gt;
+</span><span class='line'>&lt;/edit&gt;</span></code></pre></td></tr></table></div></figure></p>
 
 <p>中的 <code>sans-serif</code> 改為你想要的中文字型，若不知道就填寫 <code>Ubuntu</code>。</p>
 
